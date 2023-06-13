@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](./images/icon.svg)
+![logo](./images/blog1.png)
 
 # kevin博客 <small>1.0.0</small>
 
