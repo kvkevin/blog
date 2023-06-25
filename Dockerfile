@@ -1,6 +1,6 @@
-FROM node:latest
+FROM node:14.16.0
+RUN npm install -g docsify-cli
 WORKDIR /docsify
-RUN npm install -g docsify-cli@latest --registry https://registry.npm.taobao.org docsify-cli@latest
-# VOLUME [ "//Users/k/code/blog/kv" ]
+VOLUME /Users/k/code/blog/kv
 EXPOSE 3000
-ENTRYPOINT docsify serve ./docs
+ENTRYPOINT docsify init ./docs && docsify serve ./docs
